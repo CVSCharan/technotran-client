@@ -64,10 +64,7 @@ const MOUPage = () => {
     <main id="MOU Page">
       <NewNavBar />
       <div className={styles.mainBody}>
-        <section
-          id="MOU Landing Img"
-          className={styles.mouMainContainer}
-        >
+        <section id="MOU Landing Img" className={styles.mouMainContainer}>
           <Image
             src="/images/mou.png"
             alt="MOU Landing Img"
@@ -79,15 +76,6 @@ const MOUPage = () => {
         </section>
         <section id="MOU Landing Section">
           <div className={styles.sectionOne}>
-            <motion.h2
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} josefin-sans-text`}
-            >
-              MOU
-            </motion.h2>
             <motion.h3
               initial="hidden"
               whileInView="visible"
@@ -95,7 +83,7 @@ const MOUPage = () => {
               viewport={{ once: false, amount: 0.2 }}
               className={`${styles.sectionTxt} quicksand-text`}
             >
-              {`Technotran is committed to fostering collaborative partnerships with organizations that share our vision of advancing technology education and innovation. Our Memorandum of Understanding (MOU) outlines the terms and conditions of collaboration between Technotran and partnering entities, establishing a framework for cooperation and support in achieving shared objectives.`}
+              {`Technotran Solutions is committed to fostering collaborative partnerships with organizations that share our vision of advancing technology education and innovation. Our Memorandum of Understanding (MOU) outlines the terms and conditions of collaboration between Technotran and partnering entities, establishing a framework for cooperation and support in achieving shared objectives.`}
             </motion.h3>
           </div>
         </section>
@@ -139,7 +127,7 @@ const MOUPage = () => {
           className={styles.mouContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }} // Trigger animation when section is in the viewport
+          viewport={{ once: false, amount: 0.5 }} // Trigger animation when section is in the viewport
         >
           <div className={styles.mouSubContainer}>
             <motion.div
@@ -163,7 +151,7 @@ const MOUPage = () => {
                 Commitment
               </h2>
               <h3 className={`${styles.mouDesc} quicksand-text`}>
-                {`Technotran is committed to upholding the terms of this Memorandum
+                {`Technotran Solutions is committed to upholding the terms of this Memorandum
               of Understanding and working collaboratively with partner
               organizations to achieve shared goals and objectives. Through
               sustained cooperation and mutual support, we aim to make

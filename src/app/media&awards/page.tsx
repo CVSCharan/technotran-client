@@ -227,7 +227,7 @@ const MediaAndAwards = () => {
         <section>
           <div className={styles.sectionOne}>
             <iframe
-              src="https://www.youtube.com/embed/MDec483Hp5E?autoplay=1&loop=1&playlist=MDec483Hp5E&mute=0&controls=1"
+              src="https://www.youtube.com/embed/MDec483Hp5E?autoplay=0&mute=1&loop=1&playlist=MDec483Hp5E&mute=0&controls=1"
               allow="autoplay; encrypted-media"
               allowFullScreen
               className={styles.videoPlayer}

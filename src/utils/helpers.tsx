@@ -327,13 +327,13 @@ export const mouData: MouDataItem[] = [
   },
   {
     id: 3,
-    name: "Geethanjali Institute of Science and Technology",
+    name: "Geethanjali Institute of Science and Technology, Nellore",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Geethanjali-Institute-of-Science-and-Technology.jpg?raw=true",
   },
   {
     id: 4,
-    name: "SV colleges, Tirupathi",
+    name: "SVC, Tirupathi",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/SV-College-Tirupathi.jpg?raw=true",
   },

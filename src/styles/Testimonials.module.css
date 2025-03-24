@@ -1,273 +1,311 @@
 .testimonialsSection {
-  height: auto;
+  padding: 5rem 2rem;
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonialsSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0;
-  gap: 2rem;
-  padding: 2.5rem 0;
-  background: linear-gradient(to bottom, #ffffff, #f0f0f5);
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234b0406' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.5;
+  z-index: 0;
 }
 
 .mainContainer {
-  height: 100%;
-  width: 100%;
   max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .title {
   font-size: 2.5rem;
-  color: #4b0406;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-  text-align: center;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.titleUnderline {
+  width: 80px;
+  height: 4px;
+  background-color: #4b0406;
+  margin: 0.5rem auto 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .carouselContainer {
-  height: 100%;
-  width: 100%;
-  max-width: 1200px;
-  overflow: hidden;
+  margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .carouselItem {
+  padding: 1rem;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%; /* Ensuring it takes full height */
-  width: 100%;
-  padding: 1rem 0;
 }
 
 .testimonialCard {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background: #ffffff;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 500px; /* Optional: max width of the card */
-  height: 100%; /* Ensure the card takes full height */
-  margin: auto;
-  border: 2px solid #4b0406;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 .cardContent {
+  padding: 2.5rem 2rem 2rem;
+  position: relative;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  gap: 1rem;
+}
+
+.quoteIconTop {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  opacity: 0.15;
+  transform: rotate(180deg);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.quoteIconBottom {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.quoteIconSvg {
+  font-size: 2.5rem;
+  color: #4b0406;
 }
 
 .descriptionContainer {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+  flex: 1;
 }
 
 .description {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.7;
   color: #555;
-  font-weight: 500;
-  line-height: 1.5;
-  text-align: justify;
-  letter-spacing: 0.03rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
 }
 
 .readMoreBtn {
-  background-color: transparent;
-  align-self: flex-end;
+  background: none;
   border: none;
-  color: #810927;
+  color: #4b0406;
+  font-weight: 600;
   cursor: pointer;
-  font-size: 0.85rem;
-  font-weight: 500;
-  margin-top: 8px;
+  padding: 0;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.readMoreBtn:hover {
+  color: #810927;
   text-decoration: underline;
 }
 
 .authorInfo {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 7px;
-  padding: 0 1rem;
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+  margin-top: auto;
+  width: 100%;
+  z-index: 2;
 }
 
 .cardImage {
+  margin-right: 1rem;
   flex-shrink: 0;
 }
 
 .cardImg {
-  width: 100px;
-  height: 100px;
-  max-width: 120px;
-  max-height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 0.2rem solid #4b0406;
-  padding: 0.1rem;
+  border: 3px solid #f8f9fa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .authorDetails {
-  text-align: center;
+  flex-grow: 1;
 }
 
 .authorName {
-  font-weight: bold;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #333;
+  margin: 0 0 0.3rem;
 }
 
 .authorDesignation {
-  font-size: 0.85rem;
-  color: #4b0406;
-  font-weight: 500;
-}
-
-.quoteIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem; /* Space between the quote and description */
-}
-
-.quoteIcon svg {
-  width: 3rem; /* Adjust size for better appearance */
-  height: 3rem; /* Keeps it proportional */
-  fill: #4b0406; /* Matches your theme color */
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
 }
 
 .customControls {
   display: flex;
-  justify-content: space-between;
-  position: absolute;
-  width: 100%;
-  max-width: 80rem;
-  transform: translateY(-50%);
-  z-index: 10;
-  padding: 0 20px;
-  margin-top: 140px;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .prevButton,
 .nextButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark background */
-  color: #fff;
-  font-size: 2rem;
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  color: #4b0406;
 }
 
 .prevButton:hover,
 .nextButton:hover {
-  background-color: #4b0406; /* Blue background on hover */
+  background-color: #4b0406;
+  color: white;
+  box-shadow: 0 6px 15px rgba(75, 4, 6, 0.3);
 }
 
-.prevButton svg,
-.nextButton svg {
-  font-size: 1.5rem; /* Icon size */
-  fill: white;
-}
-
-.prevButton {
-  margin-right: 20px; /* Space between the buttons */
-}
-
-.nextButton {
-  margin-left: 20px; /* Space between the buttons */
-}
-
-/* Extra Small Mobile Devices (Portrait) */
-/* iPhone SE, older Android phones */
-@media only screen and (max-width: 320px) {
+/* Responsive styles */
+@media (max-width: 992px) {
+  .testimonialsSection {
+    padding: 4rem 1.5rem;
+  }
+  
   .title {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
   }
+  
+  .testimonialCard {
+    min-height: 380px;
+  }
+}
 
+@media (max-width: 768px) {
+  .testimonialsSection {
+    padding: 3rem 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .cardContent {
+    padding: 1.5rem;
+  }
+  
   .description {
-    font-size: 0.75rem;
+    font-size: 0.95rem;
   }
-
-  .prevButton,
-  .nextButton {
-    height: 30px;
-    width: 30px;
+  
+  .testimonialCard {
+    min-height: 350px;
   }
+  
+  .quoteIconSvg {
+    font-size: 2rem;
+  }
+}
 
-  .prevButton svg,
-  .nextButton svg {
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
     font-size: 1rem;
   }
-}
-
-/* Small Mobile Devices (Portrait) */
-/* iPhone 6/7/8, Galaxy S8 */
-@media only screen and (min-width: 321px) and (max-width: 375px) {
-  .title {
-    font-size: 1.2rem;
+  
+  .cardContent {
+    padding: 1.2rem;
   }
-
-  .description {
-    font-size: 0.75rem;
-  }
-
-  .prevButton,
-  .nextButton {
-    height: 30px;
-    width: 30px;
-  }
-
-  .prevButton svg,
-  .nextButton svg {
+  
+  .authorName {
     font-size: 1rem;
   }
-}
-
-/* Medium Mobile Devices (Portrait) */
-/* iPhone 11 Pro, Google Pixel 2 */
-@media only screen and (min-width: 376px) and (max-width: 425px) {
-  .title {
-    font-size: 1.7rem;
-  }
-
-  .description {
+  
+  .authorDesignation {
     font-size: 0.8rem;
   }
-
+  
   .prevButton,
   .nextButton {
-    height: 30px;
-    width: 30px;
+    width: 40px;
+    height: 40px;
   }
+  
+  .testimonialCard {
+    min-height: 320px;
+  }
+  
+  .quoteIconSvg {
+    font-size: 1.8rem;
+  }
+  
+  .cardImg {
+    height: 70px;
+    width: 70px;
+  }
+}
 
-  .prevButton svg,
-  .nextButton svg {
-    font-size: 1rem;
+@media (max-width: 480px) {
+  .testimonialCard {
+    min-height: 300px;
+  }
+  
+  .cardContent {
+    padding: 1rem;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
 }
