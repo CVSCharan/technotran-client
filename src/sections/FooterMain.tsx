@@ -46,8 +46,6 @@ const FooterMain = () => {
     { name: "Training Solutions", link: "/training-solutions" },
     { name: "Industrial Solutions", link: "/industrial-solutions" },
     { name: "Lab Solutions", link: "/lab-solutions" },
-    { name: "Job Exchange", link: "/job-exchange" },
-    { name: "Skill India Map", link: "/skill-india-map" },
   ];
 
   const quickLinks = [
@@ -64,9 +62,9 @@ const FooterMain = () => {
     { icon: Phone, text: "+91 9000 326 936" },
     { icon: Phone, text: "+91 9100 103 806" },
     { icon: Email, text: "info@technotran.in" },
-    // { 
-    //   icon: LocationOn, 
-    //   text: "Technotran office, Plot-24/2, Magunta layout, Nellore, A.P - 524003" 
+    // {
+    //   icon: LocationOn,
+    //   text: "Technotran office, Plot-24/2, Magunta layout, Nellore, A.P - 524003"
     // },
   ];
 
@@ -98,7 +96,7 @@ const FooterMain = () => {
       <section className={styles.footerCarouselSection}>
         <FooterMainCarousel />
       </section>
-      
+
       {/* Main Footer Content */}
       <section className={styles.footerContentSection}>
         <div className={styles.footerColumnsContainer}>
