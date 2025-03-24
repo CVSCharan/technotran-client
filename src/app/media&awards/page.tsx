@@ -28,77 +28,170 @@ const MediaAndAwards = () => {
     <main id="Technotran Media & Awards">
       <NewNavBar />
       <div className={styles.mainBody}>
-        <section
-          id="Awards Landing"
-          className={styles.rndProjectsMainContainer}
-        >
-          <div className={styles.sectionOne}>
-            <motion.h2
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} josefin-sans-text`}
-            >
-              Awards
-            </motion.h2>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              {`Technotran has been recognized for its excellence in providing
-              innovative training programs, workshops, and project solutions.
-              Our awards reflect our dedication to empowering students and
-              professionals with industry-relevant skills and knowledge.`}
-            </motion.h3>
+        <section id="Awards" className={styles.awardsSection}>
+          <div className={styles.heroContainer}>
             <Image
               src="https://github.com/CVSCharan/Technotran_Assets/blob/main/Awards1.jpeg?raw=true"
-              alt="Awards Landing Img"
+              alt="Awards Banner"
               height={700}
               width={1000}
               priority
-              className={styles.mnaLandingImg}
+              className={styles.heroBanner}
             />
+            <div className={styles.heroOverlay}></div>
           </div>
-          <div className={styles.sectionOne}>
-            <motion.h2
+
+          <div className={styles.sectionContainer}>
+            <motion.div
+              className={styles.sectionHeader}
               initial="hidden"
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} josefin-sans-text`}
             >
-              Trailblazer Award in STEM Education
-            </motion.h2>
-            <motion.h3
+              <h2 className={`${styles.sectionTitle} josefin-sans-text`}>
+                Awards & Recognition
+              </h2>
+              <div className={styles.titleUnderline}></div>
+            </motion.div>
+
+            <motion.div
+              className={styles.sectionContent}
               initial="hidden"
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
             >
-              {`We are proud to announce a significant achievement for
-              Technotran—receiving the prestigious "Trailblazer in STEM
-              Education, Educational Technology & Industry Integration" award at
-              the Growth Stories Summit & Awards, hosted by TheCconnects
-              magazine. This recognition celebrates our dedication to
-              innovation, excellence, and the seamless integration of
-              educational technology with industry practices. Technotran's
-              commitment to advancing STEM education and empowering students
-              with future-ready skills has been acknowledged as a key driver in
-              shaping the future of both education and industry collaboration.`}
-            </motion.h3>
-            <Image
-              src="https://github.com/CVSCharan/Technotran_Assets/blob/main/Awards2.jpeg?raw=true"
-              alt="Awards Landing Img"
-              height={1000}
-              width={500}
-              priority
-              className={styles.awardsLandingImg}
-            />
+              <p className={`${styles.sectionDescription} quicksand-text`}>
+                Technotran has been recognized for its excellence in providing
+                innovative training programs, workshops, and project solutions.
+                Our awards reflect our dedication to empowering students and
+                professionals with industry-relevant skills and knowledge.
+              </p>
+            </motion.div>
+          </div>
+
+          <div className={styles.awardCard}>
+            <div className={styles.awardContent}>
+              <motion.div
+                className={styles.awardHeader}
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: false, amount: 0.2 }}
+              >
+                <h3 className={`${styles.awardTitle} josefin-sans-text`}>
+                  Trailblazer Award in STEM Education
+                </h3>
+                <div className={styles.awardUnderline}></div>
+              </motion.div>
+
+              <motion.div
+                className={styles.awardDetails}
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ delay: 0.2 }}
+              >
+                <p className={`${styles.awardDescription} quicksand-text`}>
+                  We are proud to announce a significant achievement for
+                  Technotran—receiving the prestigious "Trailblazer in STEM
+                  Education, Educational Technology & Industry Integration"
+                  award at the Growth Stories Summit & Awards, hosted by
+                  TheCconnects magazine.
+                </p>
+                <p className={`${styles.awardDescription} quicksand-text`}>
+                  This recognition celebrates our dedication to innovation,
+                  excellence, and the seamless integration of educational
+                  technology with industry practices. Technotran's commitment to
+                  advancing STEM education and empowering students with
+                  future-ready skills has been acknowledged as a key driver in
+                  shaping the future of both education and industry
+                  collaboration.
+                </p>
+              </motion.div>
+            </div>
+
+            <motion.div
+              className={styles.awardImageWrapper}
+              initial="hidden"
+              whileInView="visible"
+              variants={headingVariants}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ delay: 0.3 }}
+            >
+              <Image
+                src="https://github.com/CVSCharan/Technotran_Assets/blob/main/Awards2.jpeg?raw=true"
+                alt="Trailblazer Award"
+                height={1000}
+                width={500}
+                priority
+                className={styles.awardImage}
+              />
+            </motion.div>
+          </div>
+        </section>
+        <section id="Media Section" className={styles.mediaSection}>
+          <div className={styles.sectionContainer}>
+            <motion.div
+              className={styles.sectionHeader}
+              initial="hidden"
+              whileInView="visible"
+              variants={headingVariants}
+              viewport={{ once: false, amount: 0.2 }}
+            >
+              <h2 className={`${styles.sectionTitle} josefin-sans-text`}>
+                Media Coverage
+              </h2>
+              <div className={styles.titleUnderline}></div>
+            </motion.div>
+
+            <div className={styles.mediaContentContainer}>
+              <motion.div
+                className={styles.mediaImageWrapper}
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ delay: 0.3 }}
+              >
+                <Image
+                  src="https://github.com/CVSCharan/Technotran_Assets/blob/main/Media1.png?raw=true"
+                  alt="Technotran Media Coverage"
+                  height={1000}
+                  width={1000}
+                  priority
+                  className={styles.mediaImage}
+                />
+              </motion.div>
+              <motion.div
+                className={styles.mediaTextContent}
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ delay: 0.2 }}
+              >
+                <p className={`${styles.mediaDescription} quicksand-text`}>
+                  Technotran's journey has garnered significant attention across
+                  multiple media platforms, showcasing our impactful
+                  initiatives, strategic collaborations, and remarkable
+                  achievements.
+                </p>
+                <p className={`${styles.mediaDescription} quicksand-text`}>
+                  Our efforts in bridging the gap between education and
+                  technology have resonated with industry leaders, educators,
+                  and the wider academic community. We are proud to be
+                  recognized for our contributions to technology education and
+                  remain committed to making a lasting impact.
+                </p>
+                <p className={`${styles.mediaDescription} quicksand-text`}>
+                  Stay connected with us as we continue to shape the future of
+                  education and innovation in technology.
+                </p>
+              </motion.div>
+            </div>
           </div>
         </section>
         <section
@@ -106,56 +199,18 @@ const MediaAndAwards = () => {
           className={styles.rndProjectsMainContainer}
         >
           <div className={styles.sectionOne}>
-            <motion.h2
+            <motion.div
+              className={styles.sectionHeader}
               initial="hidden"
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} josefin-sans-text`}
             >
-              Media
-            </motion.h2>
-            <motion.h3
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
-            >
-              {`Technotran’s journey has garnered significant attention across
-              multiple media platforms, showcasing our impactful initiatives,
-              strategic collaborations, and remarkable achievements. Our efforts
-              in bridging the gap between education and technology have
-              resonated with industry leaders, educators, and the wider academic
-              community. We are proud to be recognized for our contributions to
-              technology education and remain committed to making a lasting
-              impact. Stay connected with us as we continue to shape the future
-              of education and innovation in technology.`}
-            </motion.h3>
-            <Image
-              src="https://github.com/CVSCharan/Technotran_Assets/blob/main/Media1.png?raw=true"
-              alt="Awards Landing Img"
-              height={1000}
-              width={1000}
-              priority
-              className={styles.mediaLandingImg}
-            />
-          </div>
-        </section>
-        <section
-          id="Awards Landing"
-          className={styles.rndProjectsMainContainer}
-        >
-          <div className={styles.sectionOne}>
-            <motion.h2
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} josefin-sans-text`}
-            >
-              Social Media Highlights
-            </motion.h2>
+              <h2 className={`${styles.sectionTitle} josefin-sans-text`}>
+                Social Media Highlights
+              </h2>
+              <div className={styles.titleUnderline}></div>
+            </motion.div>
             <motion.h3
               initial="hidden"
               whileInView="visible"
@@ -224,14 +279,37 @@ const MediaAndAwards = () => {
             </div>
           </div>
         </section>
-        <section>
-          <div className={styles.sectionOne}>
-            <iframe
-              src="https://www.youtube.com/embed/MDec483Hp5E?autoplay=0&mute=1&loop=1&playlist=MDec483Hp5E&mute=0&controls=1"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-              className={styles.videoPlayer}
-            />
+        <section id="Video Showcase" className={styles.videoSection}>
+          <div className={styles.sectionContainer}>
+            <motion.div
+              className={styles.sectionHeader}
+              initial="hidden"
+              whileInView="visible"
+              variants={headingVariants}
+              viewport={{ once: false, amount: 0.2 }}
+            >
+              <h2 className={`${styles.sectionTitle} josefin-sans-text`}>
+                Inauguration Of Technotran Electronics Solutions
+              </h2>
+              <div className={styles.titleUnderline}></div>
+            </motion.div>
+
+            <motion.div
+              className={styles.videoWrapper}
+              initial="hidden"
+              whileInView="visible"
+              variants={headingVariants}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ delay: 0.2 }}
+            >
+              <iframe
+                src="https://www.youtube.com/embed/MDec483Hp5E?autoplay=0&mute=1&loop=1&playlist=MDec483Hp5E&mute=0&controls=1"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                title="Technotran Video Showcase"
+                className={styles.videoPlayer}
+              />
+            </motion.div>
           </div>
         </section>
       </div>
