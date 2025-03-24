@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./page.module.css";
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import { motion } from "framer-motion";
 import { eventsData } from "@/utils/helpers";
 import Image from "next/image";
@@ -26,7 +26,7 @@ const EventsPage = () => {
 
   return (
     <main id="Technotran Events">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section id="Events Landing Img" className={styles.eventsMainContainer}>
           <div className={styles.sectionOne}>

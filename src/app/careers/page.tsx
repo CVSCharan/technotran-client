@@ -1,6 +1,6 @@
 "use client";
 
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import Image from "next/image";
 import React from "react";
 import styles from "./page.module.css";
@@ -39,7 +39,7 @@ const CareersPage = () => {
 
   return (
     <main id="Technotran Careers">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section
           id="Careers Landing Img"

@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./page.module.css";
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { industrialLabSolutions } from "@/utils/helpers";
@@ -39,7 +39,7 @@ const IndustrialLabSolutions = () => {
 
   return (
     <main id="Technotran Industry Lab Solutions">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section
           id="About US Landing Img"

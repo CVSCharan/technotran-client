@@ -1,6 +1,6 @@
 "use client";
 
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
@@ -26,7 +26,7 @@ const ArVrLabPage = () => {
 
   return (
     <main id="Technotran AR/VR Lab">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section
           id="School Robotics Lab Landing Img"

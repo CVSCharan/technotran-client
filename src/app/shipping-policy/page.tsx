@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./page.module.css";
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import FooterMain from "@/sections/FooterMain";
 import EVerifyBtn from "@/components/EVerifyBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
@@ -24,7 +24,7 @@ const ShippingPolicy = () => {
 
   return (
     <main>
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section
           id="Technotran Privacy Policy Landing"

@@ -3,7 +3,7 @@
 import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import { motion } from "framer-motion";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
@@ -39,7 +39,7 @@ const JobOrientedCourcesPage = () => {
 
   return (
     <main id="Job Oriented Courses Page">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section
           id="Job Oriented Landing Img"

@@ -1,4 +1,3 @@
-import NavBar from "@/sections/NavBar";
 import styles from "./page.module.css";
 import Landing from "@/sections/Landing";
 import InnovationLabsSection from "@/sections/InnovationLabs";
@@ -12,11 +11,12 @@ import FooterMain from "@/sections/FooterMain";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import EVerifyBtn from "@/components/EVerifyBtn";
+import NewNavBar from "@/sections/NewNavBar";
 
 export default function Home() {
   return (
     <main id="Home Page">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <Landing />
         <TrainingServices />

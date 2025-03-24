@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./page.module.css";
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import PhoneBtn from "@/components/PhoneBtn";
@@ -26,7 +26,7 @@ const MediaAndAwards = () => {
 
   return (
     <main id="Technotran Media & Awards">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section
           id="Awards Landing"

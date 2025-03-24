@@ -1,6 +1,6 @@
 "use client";
 
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import React from "react";
 import styles from "./page.module.css";
 import { motion } from "framer-motion";
@@ -26,7 +26,7 @@ const IotLabPage = () => {
 
   return (
     <main id="Technotran IOT Lab">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section
           id="IOT Lab Landing Img"

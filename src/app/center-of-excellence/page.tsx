@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./page.module.css";
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import EnquiryForm from "@/components/Enquiry";
@@ -26,7 +26,7 @@ const CenterOfExcellencePage = () => {
 
   return (
     <main id="Technotran COE">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section id="COE Landing Img" className={styles.coeMainContainer}>
           <Image

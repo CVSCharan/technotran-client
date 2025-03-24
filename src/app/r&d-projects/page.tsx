@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "./page.module.css";
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import { motion } from "framer-motion";
 import PhoneBtn from "@/components/PhoneBtn";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
@@ -24,7 +24,7 @@ const RnDProjectsPage = () => {
 
   return (
     <main id="Technotran R&D Projets">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section id="R&D Landing" className={styles.rndProjectsMainContainer}>
           <div className={styles.sectionOne}>

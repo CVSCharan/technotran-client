@@ -5,7 +5,7 @@ import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import Testimonials from "@/sections/Testimonials";
 import styles from "./page.module.css";
 import FooterMain from "@/sections/FooterMain";
@@ -40,7 +40,7 @@ const WorkshopsPage = () => {
 
   return (
     <main id="Workshops Page">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section
           id="Workshops Landing Img"

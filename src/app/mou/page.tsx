@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./page.module.css";
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
 import PhoneBtn from "@/components/PhoneBtn";
 import FooterMain from "@/sections/FooterMain";
@@ -62,7 +62,7 @@ const MOUPage = () => {
 
   return (
     <main id="MOU Page">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section
           id="MOU Landing Img"

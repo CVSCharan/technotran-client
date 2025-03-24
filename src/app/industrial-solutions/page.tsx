@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import styles from "./page.module.css";
 import { industrialSolutionsData } from "@/utils/helpers";
 import WhatsAppBtn from "@/components/WhatsAppBtn";
@@ -39,7 +39,7 @@ const IndustrialSolutionsPage = () => {
 
   return (
     <main id="Industrial Solutions Page">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section
           id="Industrial Solutions Landing Img"

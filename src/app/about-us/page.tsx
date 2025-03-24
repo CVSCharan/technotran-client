@@ -1,6 +1,6 @@
 "use client";
 
-import NavBar from "@/sections/NavBar";
+import NewNavBar from "@/sections/NewNavBar";
 import React, { useEffect, useState } from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
@@ -48,7 +48,7 @@ const AboutUsPage = () => {
 
   return (
     <main id="About Us Page">
-      <NavBar />
+      <NewNavBar />
       <div className={styles.mainBody}>
         <section
           id="About US Landing Img"
