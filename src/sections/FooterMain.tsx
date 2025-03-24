@@ -9,16 +9,17 @@ import {
   Instagram,
   LinkedIn,
   YouTube,
+  LocationOn,
 } from "@mui/icons-material";
 import FooterMainCarousel from "@/components/FotterMainCarousel";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const FooterMain = () => {
   const [isClient, setIsClient] = useState(false);
-
   const [isHomeRoute, setIsHomeRoute] = useState(false);
-  const pathname = usePathname(); // Provides the current route
+  const pathname = usePathname();
 
   useEffect(() => {
     setIsClient(true);
@@ -29,27 +30,44 @@ const FooterMain = () => {
   };
 
   useEffect(() => {
-    // Check if the current route is home
     setIsHomeRoute(pathname === "/");
   }, [pathname]);
 
-  const quickLinks = [
-    { name: "Home", link: "/" },
+  // Footer sections data
+  const whoAreWeLinks = [
     { name: "About Us", link: "/about-us" },
-    { name: "MOU", link: "/mou" },
     { name: "Contact Us", link: "/contact-us" },
-    {
-      name: "Shipping, Return, Refund Policy",
-      link: "/shipping-policy",
-    },
+    { name: "Help & Support", link: "/help-support" },
     { name: "Terms And Conditions", link: "/terms&conditions" },
     { name: "Privacy Policy", link: "/privacy-policy" },
+  ];
+
+  const whatWeOfferLinks = [
+    { name: "Training Solutions", link: "/training-solutions" },
+    { name: "Industrial Solutions", link: "/industrial-solutions" },
+    { name: "Lab Solutions", link: "/lab-solutions" },
+    { name: "Job Exchange", link: "/job-exchange" },
+    { name: "Skill India Map", link: "/skill-india-map" },
+  ];
+
+  const quickLinks = [
+    { name: "Home", link: "/" },
+    { name: "Workshops", link: "/workshops" },
+    { name: "MOU", link: "/mou" },
+    { name: "Media & Awards", link: "/media&awards" },
+    { name: "Events", link: "/events" },
+    { name: "Careers", link: "/careers" },
+    { name: "Contact Us", link: "/contact-us" },
   ];
 
   const contactInfo = [
     { icon: Phone, text: "+91 9000 326 936" },
     { icon: Phone, text: "+91 9100 103 806" },
     { icon: Email, text: "info@technotran.in" },
+    // { 
+    //   icon: LocationOn, 
+    //   text: "Technotran office, Plot-24/2, Magunta layout, Nellore, A.P - 524003" 
+    // },
   ];
 
   const socialLinks = [
@@ -76,98 +94,98 @@ const FooterMain = () => {
   ];
 
   return (
-    <footer id="Footer Main" className={styles.footerMainSection}>
+    <footer className={styles.footerMainSection}>
       <section className={styles.footerCarouselSection}>
         <FooterMainCarousel />
       </section>
-      <section className={styles.footerSubSection}>
-        {/* Quick Links Section */}
-        <div className={styles.quickLinksSection}>
-          <h2 className={`${styles.title} josefin-sans-text`}>Quick Links</h2>
-          <ul className={styles.quickLinksSubSection}>
-            {quickLinks.map((link, index) => (
-              <li key={index} className={styles.quickLinksItem}>
-                <a
-                  href={link.link}
-                  className={`${styles.quickLinksTxt} josefin-sans-text`}
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+      
+      {/* Main Footer Content */}
+      <section className={styles.footerContentSection}>
+        <div className={styles.footerColumnsContainer}>
+          {/* WHO ARE WE Column */}
+          <div className={styles.footerColumn}>
+            <h2 className={styles.footerColumnTitle}>WHO ARE WE</h2>
+            <ul className={styles.footerLinksList}>
+              {whoAreWeLinks.map((link, index) => (
+                <li key={index} className={styles.footerLinkItem}>
+                  <Link href={link.link} className={styles.footerLink}>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        {/* Reach Us and Contact Us */}
-        <div className={styles.footerSubContainer}>
-          <div className={styles.footerSubContainerOne}>
-            <div className={styles.reachUsSection}>
-              <h2 className={`${styles.title} josefin-sans-text`}>Reach Us</h2>
-              <div className={styles.reachUsSubSection}>
-                {[
-                  "Technotran office, Plot-24/2,",
-                  "Near more supermarket,",
-                  "beside Canara bank,",
-                  "Magunta layout, Nellore, A.P - 524003",
-                ].map((line, index) => (
-                  <h3
-                    key={index}
-                    className={`${styles.reachUsTxt} quicksand-text`}
-                  >
-                    {line}
-                  </h3>
-                ))}
-              </div>
-            </div>
+          {/* WHAT WE OFFER Column */}
+          <div className={styles.footerColumn}>
+            <h2 className={styles.footerColumnTitle}>WHAT WE OFFER</h2>
+            <ul className={styles.footerLinksList}>
+              {whatWeOfferLinks.map((link, index) => (
+                <li key={index} className={styles.footerLinkItem}>
+                  <Link href={link.link} className={styles.footerLink}>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            <div className={styles.contactInfoSection}>
-              <h2 className={`${styles.title} josefin-sans-text`}>
-                Contact Us
-              </h2>
-              <div className={styles.contactInfoSubSection}>
-                {contactInfo.map((info, index) => (
-                  <div key={index} className={styles.contactInfoItems}>
-                    <info.icon className={styles.contactIcons} />
-                    <h2 className={`${styles.contactInfoTxt} quicksand-text`}>
-                      {info.text}
-                    </h2>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Follow Us */}
-            <div className={styles.followUsSection}>
-              <h2 className={`${styles.title} josefin-sans-text`}>Follow Us</h2>
-              <div className={styles.followUsIconsContainer}>
-                {socialLinks.map(({ icon: Icon, color, link }, index) => (
-                  <Icon
-                    key={index}
-                    style={{ fill: color, fontSize: "3rem" }}
-                    onClick={() => handleSocialIconsClick(link)}
-                    className={styles.followUsSocialMediaIcons}
-                  />
-                ))}
-              </div>
-            </div>
+          {/* QUICK LINKS Column */}
+          <div className={styles.footerColumn}>
+            <h2 className={styles.footerColumnTitle}>QUICK LINKS</h2>
+            <ul className={styles.footerLinksList}>
+              {quickLinks.map((link, index) => (
+                <li key={index} className={styles.footerLinkItem}>
+                  <Link href={link.link} className={styles.footerLink}>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
-        <Image
-          src="/images/Technotran-logo.png"
-          alt="Footer Logo"
-          height={200}
-          width={300}
-          priority
-          className={styles.footerLogo}
-        />
+        {/* Contact and Social Media Section */}
+        <div className={styles.footerBottomSection}>
+          <div className={styles.footerContactSection}>
+            {contactInfo.map((info, index) => (
+              <div key={index} className={styles.contactItem}>
+                <info.icon className={styles.contactIcon} />
+                <span className={styles.contactText}>{info.text}</span>
+              </div>
+            ))}
+          </div>
 
-        <div className={styles.copyRightsSection}>
-          <h2 className={styles.footerTxt}>
+          <div className={styles.footerSocialSection}>
+            {socialLinks.map(({ icon: Icon, color, link }, index) => (
+              <Icon
+                key={index}
+                style={{ fill: color }}
+                onClick={() => handleSocialIconsClick(link)}
+                className={styles.socialIcon}
+              />
+            ))}
+          </div>
+
+          <div className={styles.footerLogoSection}>
+            <Image
+              src="/images/Technotran-logo.png"
+              alt="Technotran Logo"
+              height={80}
+              width={200}
+              priority
+              className={styles.footerLogo}
+            />
+          </div>
+        </div>
+
+        {/* Copyright Section */}
+        <div className={styles.copyrightSection}>
+          <p className={styles.copyrightText}>
             © 2016 - 2025 All rights reserved - Technotran Solutions.
-          </h2>
+          </p>
           {isHomeRoute && (
-            <h3 className={styles.footerSubTxt}>Developed by CVS CHARAN</h3>
+            <p className={styles.developerText}>Developed by CVS CHARAN</p>
           )}
         </div>
       </section>

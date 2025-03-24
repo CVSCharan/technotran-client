@@ -13,7 +13,7 @@ const WhatsAppBtn = () => {
 
   const handleWhatsAppClick = () => {
     if (isClient && typeof window !== "undefined") {
-      window.open("https://wa.me/919000325936", "_blank");
+      window.open("https://wa.me/919000326936", "_blank");
     }
   };
 

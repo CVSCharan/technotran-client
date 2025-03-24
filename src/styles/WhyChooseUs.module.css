@@ -180,6 +180,44 @@
   }
 }
 
+/* Large Mobile Devices and Small Tablets */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .whyChooseUsContainer {
+    min-height: 80vh;
+    padding: 1.5rem 1rem;
+  }
+
+  .whyChooseUsTitle {
+    font-size: 1.8rem;
+  }
+
+  .cardMainContainer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  .cardContainer {
+    width: 33%;
+    height: 400px;
+  }
+
+  .cardImg {
+    height: 55%;
+  }
+
+  .cardSubContainer {
+    height: 45%;
+  }
+
+  .cardTxt {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+}
+
 /* Tablets (portrait and landscape) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .whyChooseUsContainer {
@@ -193,13 +231,14 @@
   .cardMainContainer {
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: nowrap;
+    gap: 0.8rem;
   }
 
   .cardContainer {
-    width: 100%;
-    height: 470px;
+    width: 33%;
+    height: 450px;
   }
 
   .cardImg {
@@ -211,7 +250,114 @@
   }
 
   .cardTxt {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     line-height: 1.5;
+  }
+}
+
+/* Large Tablets and Small Laptops */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .whyChooseUsContainer {
+    min-height: 50vh;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .whyChooseUsTitle {
+    font-size: 2.2rem;
+  }
+
+  .cardMainContainer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  .cardContainer {
+    width: 33%;
+    height: 480px;
+  }
+
+  .cardImg {
+    height: 58%;
+  }
+
+  .cardSubContainer {
+    height: 42%;
+  }
+
+  .cardTxt {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+}
+
+/* Large Laptops and Desktops */
+@media only screen and (min-width: 1281px) {
+  .whyChooseUsContainer {
+    min-height: 60vh;
+    padding: 3rem 2rem;
+  }
+
+  .cardMainContainer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+  }
+
+  .cardContainer {
+    width: 33%;
+    height: 500px;
+    transition: transform 0.3s ease;
+  }
+
+  .cardContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .cardTxt {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+}
+
+/* Fix for landscape mode on mobile devices */
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+  .whyChooseUsContainer {
+    padding: 1rem;
+  }
+
+  .whyChooseUsTitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .cardMainContainer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  .cardContainer {
+    width: 33%;
+    height: 280px;
+  }
+
+  .cardImg {
+    height: 55%;
+  }
+
+  .cardSubContainer {
+    height: 45%;
+    padding: 0.5rem;
+  }
+
+  .cardTxt {
+    font-size: 0.65rem;
+    line-height: 1.3;
   }
 }

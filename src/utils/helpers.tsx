@@ -100,11 +100,17 @@ export const valuedClientsData: ValuedClientsDataItem[] = [
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Vemu-Institute-of-Technology-Chittoor.png?raw=true",
     name: "Vemu Institute of Technology, Chittoor",
   },
+  // {
+  //   id: 2,
+  //   imgSrc:
+  //     "https://github.com/CVSCharan/Technotran_Assets/blob/main/SV-college-of-Engineering-Kadapa.png?raw=true",
+  //   name: "SV college of Engineering, Kadapa",
+  // },
   {
     id: 2,
     imgSrc:
-      "https://github.com/CVSCharan/Technotran_Assets/blob/main/SV-college-of-Engineering-Kadapa.png?raw=true",
-    name: "SV college of Engineering, Kadapa",
+      "https://github.com/CVSCharan/Technotran_Assets/blob/main/CMR-College-Hyderabad-new-Logo.jpg?raw=true",
+    name: "CMR College of Engineering & Technology",
   },
   {
     id: 3,
@@ -189,12 +195,6 @@ export const valuedClientsData: ValuedClientsDataItem[] = [
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Sree-Chaitanya.png?raw=true",
     name: "Sree Chaitanya",
-  },
-  {
-    id: 17,
-    imgSrc:
-      "https://github.com/CVSCharan/Technotran_Assets/blob/main/CMR-College-Hyderabad-new-Logo.jpg?raw=true",
-    name: "CMR College of Engineering & Technology",
   },
 ];
 

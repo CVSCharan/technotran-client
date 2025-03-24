@@ -16,7 +16,7 @@ const PhoneBtn = () => {
       animate="visible"
       variants={variants}
       transition={{ duration: 0.7 }} // Adjust duration as needed
-      href="tel:+91 9000325936"
+      href="tel:+91 9000326936"
     >
       <Fab
         color="success"

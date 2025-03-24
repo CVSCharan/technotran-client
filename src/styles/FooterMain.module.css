@@ -10,7 +10,7 @@
 }
 
 .footerCarouselSection {
-  height: 25%;
+  margin: 1rem 0;
   width: 100%;
   max-width: 80rem;
   display: flex;
@@ -126,26 +126,31 @@
 }
 
 .carouselContainer {
-  height: 100%;
-  width: 95%;
+  width: 100%;
   max-width: 80rem;
   overflow: hidden;
   padding: 1rem 0;
-  position: relative;
+  background: linear-gradient(270deg, #4b0406, #6b0f12, #a82b30);
 }
 
 .carouselItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 175px !important;
-  margin-left: 25px;
+  justify-content: space-evenly;
 }
 
 .carouselImage {
-  width: 175px;
-  height: 130px;
+  width: 115px;
+  height: 90px;
+  object-fit: fill;
+  border-radius: 8px;
+  align-self: center;
+}
+
+.carouselImageOne {
+  width: 155px;
+  height: 90px;
   object-fit: fill;
   border-radius: 8px;
   align-self: center;
@@ -528,5 +533,346 @@
 
   .footerSubTxt {
     font-size: 0.7rem;
+  }
+}
+
+.footerMainSection {
+  width: 100%;
+  background-color: #00308f;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+.footerCarouselSection {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.footerContentSection {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerColumnsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.footerColumn {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.footerColumnTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footerColumnTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #ff5733;
+}
+
+.footerLinksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinkItem {
+  margin-bottom: 0.8rem;
+}
+
+.footerLink {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #ff5733;
+}
+
+.footerBottomSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footerContactSection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactIcon {
+  font-size: 1.2rem;
+  fill: #ff5733 !important;
+}
+
+.contactText {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.footerSocialSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.socialIcon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.socialIcon:hover {
+  transform: translateY(-3px);
+}
+
+.footerLogoSection {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footerLogo {
+  max-width: 100%;
+  height: auto;
+}
+
+.copyrightSection {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.copyrightText {
+  font-size: 0.9rem;
+  margin: 0;
+  color: white;
+}
+
+.developerText {
+  font-size: 0.8rem;
+  margin: 0.5rem 0 0;
+  color: #e0e0e0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footerColumnsContainer {
+    flex-direction: column;
+  }
+
+  .footerColumn {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .footerBottomSection {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footerContactSection,
+  .footerSocialSection,
+  .footerLogoSection {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footerLogoSection {
+    order: -1;
+  }
+}
+
+/* Partner Carousel Styles */
+.partnerCarouselWrapper {
+  padding: 2rem 0;
+  width: 100%;
+  background: linear-gradient(270deg, #4b0406, #6b0f12, #a82b30);
+}
+
+.cardsCarouselContainer {
+  position: relative;
+  padding: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.partnerCard {
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partnerImageWrapper {
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  max-width: 200px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partnerImage,
+.partnerImageSpecial {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.partnerImageSpecial {
+  /* Special styling for the third image if needed */
+  filter: none;
+  opacity: 1;
+}
+
+.carouselNavButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prevButton {
+  left: 0;
+}
+
+.nextButton {
+  right: 0;
+}
+
+.carouselNavButton:hover {
+  background-color: #4b0406;
+  color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .partnerCarouselWrapper {
+    padding: 1.5rem 0;
+  }
+
+  .partnerCarouselTitle {
+    font-size: 1.3rem;
+  }
+
+  .partnerImageWrapper {
+    height: 90px;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardsCarouselContainer {
+    padding: 0 2rem;
+  }
+
+  .partnerCarouselTitle {
+    font-size: 1.2rem;
+  }
+
+  .partnerImageWrapper {
+    height: 80px;
+    padding: 0.7rem;
+  }
+
+  .partnerImage,
+  .partnerImageSpecial {
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .partnerCard {
+    margin: 0 5px;
+  }
+
+  .cardsCarouselContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partnerCarouselWrapper {
+    padding: 1rem 0;
+  }
+
+  .partnerCarouselTitle {
+    font-size: 1.1rem;
+  }
+
+  .partnerImageWrapper {
+    height: 70px;
+    padding: 0.5rem;
+  }
+
+  .partnerImage,
+  .partnerImageSpecial {
+    max-height: 50px;
+  }
+
+  .carouselNavButton {
+    width: 30px;
+    height: 30px;
   }
 }

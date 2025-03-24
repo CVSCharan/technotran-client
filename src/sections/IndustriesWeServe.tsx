@@ -54,18 +54,33 @@ const IndustriesWeServe = () => {
     dots: false,
     arrows: false,
     slidesToShow: 3,
+    infinite: true,
+    speed: 700,
+    swipeToSlide: true,
     responsive: [
+      {
+        breakpoint: 1600, // Extra large screens
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
+      },
       {
         breakpoint: 1200, // Large screens
         settings: { slidesToShow: 4, slidesToScroll: 1 },
       },
       {
-        breakpoint: 768, // Tablets
+        breakpoint: 992, // Medium screens
         settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
       {
+        breakpoint: 768, // Tablets
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 576, // Small tablets
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
+      },
+      {
         breakpoint: 480, // Mobile devices
-        settings: { slidesToShow: 3, slidesToScroll: 1 },
+        settings: { slidesToShow: 1, slidesToScroll: 1 },
       },
     ],
   };
@@ -109,19 +124,21 @@ const IndustriesWeServe = () => {
         {/* Carousel */}
         <div className={styles.carouselContainer}>
           <Carousel
-            ref={carouselRef} // Attach the ref to the Carousel component
+            ref={carouselRef}
             {...settings}
           >
             {industriesWeServeCarouselData.map((item, index) => (
               <div key={index} className={styles.carouselItem}>
-                <Image
-                  priority
-                  height={400}
-                  width={400}
-                  src={item.imgSrc}
-                  alt={item.title}
-                  className={styles.carouselImage}
-                />
+                <div className={styles.imageWrapper}>
+                  <Image
+                    priority
+                    height={400}
+                    width={400}
+                    src={item.imgSrc}
+                    alt={item.title}
+                    className={styles.carouselImage}
+                  />
+                </div>
                 <div className={styles.carouselContent}>
                   <h3 className={`${styles.carouselTitle} quicksand-text`}>
                     {item.title}
