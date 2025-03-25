@@ -362,13 +362,13 @@ export const mouData: MouDataItem[] = [
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Vemu-Inst-Chittoor.jpg?raw=true",
   },
   {
-    id: 8,
+    id: 9,
     name: "SRM Valliammai College, Kanchipuram",
     imgSrc:
       "https://res.cloudinary.com/doxrqtfxo/image/upload/v1742860140/Technotran%20Assets/xtx9etmduqzk4wozg5x8.jpg",
   },
   {
-    id: 8,
+    id: 10,
     name: "Sreenivasa Institute of Technology and Management Studies",
     imgSrc:
       "https://res.cloudinary.com/doxrqtfxo/image/upload/v1742859823/Technotran%20Assets/ulxepghbkzllq7xx7upo.jpg",
