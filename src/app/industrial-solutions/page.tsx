@@ -152,12 +152,6 @@ const IndustrialSolutionsPage = () => {
               <li className={`${styles.sectionTxt} quicksand-text`}>
                 Embedded Product Training.
               </li>
-              <li className={`${styles.sectionTxt} quicksand-text`}>
-                App development
-              </li>
-              <li className={`${styles.sectionTxt} quicksand-text`}>
-                Web Design
-              </li>
             </motion.ul>
           </div>
         </section>

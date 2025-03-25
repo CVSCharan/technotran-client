@@ -203,64 +203,64 @@ export const testimonialsCarouselData: TestimonialsCarouselDataItem[] = [
     id: 1,
     desc: "Heartfelt Thanks to the entire team at Technotran for conducting the enlightening Skill Orientation on Arduino. This workshop has been a valuable learning experience for all participants, especially for beginners in microcontroller programming. We'd also like to express our appreciation to all the participants who actively engaged and contributed to the success of this program. we look forward to applying the knowledge and skills acquired here in our future endeavours. We hope to continue our association with Technotran. Thank you for this wonderful opportunity.",
     imgSrc:
-      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Picture7.png?raw=true",
-    name: "Prof.K. Dhanunjaya",
+      "https://res.cloudinary.com/doxrqtfxo/image/upload/v1741560418/Technotran%20Assets/ldymgf9up4wkp2usv3hw.png",
+    name: "Prof. K Dhanunjaya",
     designation: "ECE, HOD, ASCET, Gudur",
   },
   {
     id: 2,
     desc: "We extend our appreciation to the Technotran team for arranging a specialized 2-day workshop for our ECE students. This workshop equipped our students with a deep understanding of PCB design and simulation method. The knowledge gained in this workshop is invaluable, and we are confident it will be applied in future technological endeavors.",
     imgSrc:
-      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Picture6.png?raw=true",
-    name: "Dr.S. leela lakshmi",
+      "https://res.cloudinary.com/doxrqtfxo/image/upload/v1741560418/Technotran%20Assets/rgrq7tpkxyetrklwfclv.png",
+    name: "Dr. S Leela lakshmi",
     designation: "ECE, HOD, VIT,Chittoor",
   },
   {
     id: 3,
     desc: "I'd like to thank Technotran for arranging an IoT workshop at our college. This workshop was a fantastic hands-on learning experience, helping our ECE students understand IoT better and sparking ideas for their final projects. Our ECE students actively took part and responded positively, which was great. Technotran's commitment and knowledge in delivering this workshop left a strong impression, and we're excited about future opportunities like this.",
     imgSrc:
-      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Picture5.png?raw=true",
-    name: "Dr.K. Murali",
+      "https://res.cloudinary.com/doxrqtfxo/image/upload/v1741560418/Technotran%20Assets/prkqpn5vgqypergxexzh.png",
+    name: "Dr. K Murali",
     designation: "ECE, HOD, NEC, Nellore",
   },
   {
     id: 4,
     desc: "Thanks to Technotran for hosting a successful 4-day workshop on PCB design and application development for our 2nd-year BTech ECE students. The students performed well, and we believe this knowledge will benefit them in the future. We look forward to future collaborations with Technotran.",
     imgSrc:
-      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Picture4.png?raw=true",
-    name: "Dr.S. Rajendra prasad",
+      "https://res.cloudinary.com/doxrqtfxo/image/upload/v1741560417/Technotran%20Assets/rl2ejphor1hgr3woz0l6.png",
+    name: "Dr. S Rajendra prasad",
     designation: "ECE, HOD, VNR VJIT, HYD",
   },
   {
     id: 5,
     desc: "Invited Technotran Team for 1 week certification course on Embedded systems. Students showed so much interest during training, as all the sessions were complete hands-on. It was a very good experience to have such workshop in our college. I’am sure that everyone will do academic projects on their own.",
     imgSrc:
-      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Picture3.png?raw=true",
-    name: "Dr.Y.Padma Sai",
+      "https://res.cloudinary.com/doxrqtfxo/image/upload/v1741560417/Technotran%20Assets/u6ikhygdbswtjg5plho5.png",
+    name: "Dr. Y Padma Sai",
     designation: "ECE, HOD, VNR VJIT, HYD",
   },
   {
     id: 6,
     desc: "We express our gratitude to the Technotran team for hosting an insightful 2-day workshop on Bluetooth Robotics with Raspberry PI PICO. This workshop offered our Second-year students valuable insights into Raspberry pi basics and Robotics. The teaching methodology was highly effective, and we anticipate further collaborations in the future.",
     imgSrc:
-      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Picture2.png?raw=true",
-    name: "Dr.D. srinivasulu Reddy",
+      "https://res.cloudinary.com/doxrqtfxo/image/upload/v1741560417/Technotran%20Assets/dam0ua2pohoddljjatbe.png",
+    name: "Dr. D Srinivasulu Reddy",
     designation: "ECE, HOD, SVCE, TPT",
   },
   {
     id: 7,
     desc: "A big thank you to Technotran for the fantastic 3-day Auto-bots workshop. Our first-year students learned Arduino and Robotics basics, improving their technical skills for the future. Great job!",
     imgSrc:
-      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Picture1.png?raw=true",
-    name: "Dr. N. Sudhakar Reddy",
+      "https://res.cloudinary.com/doxrqtfxo/image/upload/v1741560417/Technotran%20Assets/wodocpfpxian3xquwona.png",
+    name: "Dr. N Sudhakar Reddy",
     designation: "Principal, SVCE, TPT",
   },
   {
     id: 8,
     desc: "A lot of thanks to Technotran team for organizing 3 workshops on PCB Design, Robotics & Embedded Systems for B.Tech 2nd, 3rd & 4th students at our campus. We for tremendous response from the students. I am looking forward to organize more workshops like this to boost up and to motivates students towards technical side.",
     imgSrc:
-      "https://github.com/CVSCharan/Technotran_Assets/blob/main/Picture8.png?raw=true",
-    name: "Dr.J.M.Mathana",
+      "https://res.cloudinary.com/doxrqtfxo/image/upload/v1741560418/Technotran%20Assets/qhzcrtp9saxgfws1a3ht.png",
+    name: "Dr. J M Mathana",
     designation: "ECE, HOD, SA Engineering college, Chennai",
   },
   {
@@ -268,7 +268,7 @@ export const testimonialsCarouselData: TestimonialsCarouselDataItem[] = [
     desc: "As the Head of the Department, I want to thank the Technotran team for arranging the Raspberry Pi Pico with Python workshop at our college. It's been a great hands-on learning experience for our students, helping them better understand Raspberry Pi and Python programming. I'm impressed by Technotran dedication and expertise in delivering this workshop, and our students actively participated. This workshop has been an excellent opportunity for students, and we appreciate Technotran team expertise.",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Picture11.png?raw=true",
-    name: "Prof.P. Srinivasulu Reddy",
+    name: "Prof. P Srinivasulu Reddy",
     designation: "HOD, NEC, Gudur",
   },
   {
@@ -276,7 +276,7 @@ export const testimonialsCarouselData: TestimonialsCarouselDataItem[] = [
     desc: "As the Head of the Department, I would like to extend my gratitude to the Technotran team for organizing the workshops on the Internet of Robotic Things (IoRT) and Edge AI at our college. These sessions have been excellent hands-on learning experiences for our students, enabling them to gain a deeper understanding of IoRT and Edge AI concepts. These workshops have provided invaluable opportunities for our students, and we sincerely appreciate the Technotran team's commitment and expertise.",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/CMR-College-Testimonial-Image.jpg?raw=true",
-    name: "Dr.P. Raveendra Babu",
+    name: "Dr. P.Raveendra Babu",
     designation: "HOD, ECE, CMRCET, Hyderabad",
   },
   {
@@ -284,7 +284,7 @@ export const testimonialsCarouselData: TestimonialsCarouselDataItem[] = [
     desc: "We would like to express our gratitude to the Technotran team for organizing the Arduino Workshop at our college. The workshop provided an invaluable hands-on learning experience for our students, greatly enriching their understanding of Arduino projects and programming. This initiative has unquestionably offered our students a valuable educational experience, and we extend our sincere thanks to the Technotran team for their exemplary efforts in making this workshop a success.",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/GIST-Gangavaram-Testimonial-Logo.jpg?raw=true",
-    name: "Dr.U. Penchalaiah",
+    name: "Dr. U.Penchalaiah",
     designation: "HOD, ECE, GIST, Gangavaram",
   },
 ];
@@ -360,6 +360,18 @@ export const mouData: MouDataItem[] = [
     name: "Vemu Institute of Technology, Chittoor",
     imgSrc:
       "https://github.com/CVSCharan/Technotran_Assets/blob/main/Vemu-Inst-Chittoor.jpg?raw=true",
+  },
+  {
+    id: 8,
+    name: "Sreenivasa Institute of Technology and Management Studies",
+    imgSrc:
+      "https://res.cloudinary.com/doxrqtfxo/image/upload/v1742860140/Technotran%20Assets/xtx9etmduqzk4wozg5x8.jpg",
+  },
+  {
+    id: 8,
+    name: "Sreenivasa Institute of Technology and Management Studies",
+    imgSrc:
+      "https://res.cloudinary.com/doxrqtfxo/image/upload/v1742859823/Technotran%20Assets/ulxepghbkzllq7xx7upo.jpg",
   },
 ];
 

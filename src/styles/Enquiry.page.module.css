@@ -1,187 +1,236 @@
-/* Form Styles */
-.formContainer {
-  max-width: 750px;
+/* Main container styles */
+.enquiryWrapper {
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
-  background-color: #f9f9f9;
+  padding: 2rem 1rem;
+}
+
+.enquiryContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 2px solid #4b0406;
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap */
-  gap: 1rem; /* Creates space between form groups */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Form section styles */
+.formSection {
+  padding: 2.5rem;
+  background-color: #fff;
+}
+
+.formHeader, .contactHeader {
+  margin-bottom: 1.5rem;
+}
+
+.formTitle, .contactTitle {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.titleUnderline {
+  width: 60px;
+  height: 3px;
+  background-color: #4b0406;
+  margin-bottom: 1.5rem;
+}
+
+.formContainer {
+  width: 100%;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .formGroup {
-  flex: 1 1 calc(50% - 0.5rem); /* Each takes up half the container with gap */
-  min-width: 300px; /* Prevents shrinking too much */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.formGrid .formGroup {
+  margin-bottom: 0;
+}
+
+.formGroup label {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: #4b0406;
+  box-shadow: 0 0 0 2px rgba(75, 4, 6, 0.1);
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #aaa;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.selectInput {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1em;
+  background-color: white;
+}
+
+.submitButton {
+  background-color: #4b0406;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.submitButton:hover {
+  background-color: #3a0304;
+}
+
+/* Contact section styles */
+.contactSection {
+  padding: 2.5rem;
+  background-color: #f8f9fa;
   display: flex;
   flex-direction: column;
 }
 
-/* Make the Message field occupy full width */
-.formGroup.fullWidth {
-  flex: 1 1 100%; /* Occupies full width */
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.formGroup label {
-  font-size: 1rem;
-  color: #555;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
-.formGroup input,
-.formGroup select,
-.formGroup textarea {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
-  padding: 0.7rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border-color 0.3s ease;
-}
-
-.formGroup input:focus,
-.formGroup select:focus,
-.formGroup textarea:focus {
-  border-color: #4b0406;
-  outline: none;
-}
-
-.submitButton {
-  display: block;
-  width: 40%;
-  padding: 0.8rem;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #333;
-  background-color: white;
-  border: 2px solid #4b0406;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 1rem auto 0; /* Centers button */
-  text-align: center;
-}
-
-.submitButton:hover {
+.contactIcon {
   background-color: #4b0406;
   color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-.btnContainer {
-  height: 10%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin: 1rem 0;
-  padding: 0.7rem 0.7rem;
+.contactText h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #333;
 }
 
-.button {
+.contactText p {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.contactButtons {
   display: flex;
-  justify-content: center;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.contactButton {
+  display: flex;
   align-items: center;
-  text-decoration: none;
-  gap: 0.5rem;
-  background: linear-gradient(90deg, #4b0406, #6b0f12, #a82b30);
-  padding: 0.7rem 0.7rem;
-  border-radius: 1rem;
-  border: 0;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  background-color: #4b0406;
   color: white;
-  font-weight: 600;
-  font-family: "Playwrite GB S", cursive;
-  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  flex: 1;
 }
 
-.button:hover {
-  transform: scale(1.1); /* Scale up on hover */
-  background: linear-gradient(
-    120deg,
-    #4b0406,
-    #6b0f12,
-    #a82b30
-  ); /* Reverse gradient */
+.contactButton:hover {
+  background-color: #3a0304;
 }
 
-/* Extra Small Mobile Devices (Portrait) */
-/* iPhone SE, older Android phones */
-@media only screen and (max-width: 320px) {
-  .formContainer {
-    width: 290px;
-    padding: 2rem 0.5rem;
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .enquiryContainer {
+    grid-template-columns: 1fr;
   }
-
-  .formGroup {
-    flex: 1 1 100%;
+  
+  .formSection, .contactSection {
+    padding: 2rem;
   }
-
-  .formGroup label {
-    font-size: 0.75rem;
-  }
-
-  .formGroup input,
-  .formGroup select,
-  .formGroup textarea {
-    font-size: 0.75rem;
-    width: 270px;
-  }
-
-  .button {
-    font-size: 0.75rem;
+  
+  .contactButtons {
+    margin-top: 2rem;
   }
 }
 
-/* Small Mobile Devices (Portrait) */
-/* iPhone 6/7/8, Galaxy S8 */
-@media only screen and (min-width: 321px) and (max-width: 375px) {
-  .formContainer {
-    width: 350px;
-    padding: 2rem 1rem;
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
   }
-
-  .formGroup {
-    flex: 1 1 100%;
+  
+  .formSection, .contactSection {
+    padding: 1.5rem;
   }
-
-  .formGroup label {
-    font-size: 0.85rem;
-  }
-
-  .formGroup input,
-  .formGroup select,
-  .formGroup textarea {
-    font-size: 1rem;
-  }
-
-  .button {
-    font-size: 1rem;
+  
+  .formTitle, .contactTitle {
+    font-size: 1.6rem;
   }
 }
 
-/* Medium Mobile Devices (Portrait) */
-/* iPhone 11 Pro, Google Pixel 2 */
-@media only screen and (min-width: 376px) and (max-width: 425px) {
-  .formContainer {
-    width: 370px;
+@media (max-width: 480px) {
+  .enquiryWrapper {
+    padding: 1rem 0.5rem;
   }
-
-  .formGroup label {
-    font-size: 1rem;
+  
+  .formSection, .contactSection {
+    padding: 1.25rem;
   }
-
-  .formGroup input,
-  .formGroup select,
-  .formGroup textarea {
-    font-size: 1rem;
-  }
-
-  .button {
-    font-size: 1rem;
+  
+  .contactButtons {
+    flex-direction: column;
   }
 }

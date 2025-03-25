@@ -95,20 +95,20 @@ const MediaAndAwards = () => {
                 transition={{ delay: 0.2 }}
               >
                 <p className={`${styles.awardDescription} quicksand-text`}>
-                  We are proud to announce a significant achievement for
+                  {`We are proud to announce a significant achievement for
                   Technotran—receiving the prestigious "Trailblazer in STEM
                   Education, Educational Technology & Industry Integration"
                   award at the Growth Stories Summit & Awards, hosted by
-                  TheCconnects magazine.
+                  TheCconnects magazine.`}
                 </p>
                 <p className={`${styles.awardDescription} quicksand-text`}>
-                  This recognition celebrates our dedication to innovation,
+                  {`This recognition celebrates our dedication to innovation,
                   excellence, and the seamless integration of educational
                   technology with industry practices. Technotran's commitment to
                   advancing STEM education and empowering students with
                   future-ready skills has been acknowledged as a key driver in
                   shaping the future of both education and industry
-                  collaboration.
+                  collaboration.`}
                 </p>
               </motion.div>
             </div>
@@ -174,10 +174,10 @@ const MediaAndAwards = () => {
                 transition={{ delay: 0.2 }}
               >
                 <p className={`${styles.mediaDescription} quicksand-text`}>
-                  Technotran's journey has garnered significant attention across
+                  {` Technotran's journey has garnered significant attention across
                   multiple media platforms, showcasing our impactful
                   initiatives, strategic collaborations, and remarkable
-                  achievements.
+                  achievements.`}
                 </p>
                 <p className={`${styles.mediaDescription} quicksand-text`}>
                   Our efforts in bridging the gap between education and
@@ -216,7 +216,7 @@ const MediaAndAwards = () => {
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: true, amount: 0.2 }}
-              className={`${styles.sectionTxt} quicksand-text`}
+              className={`${styles.sectionDescription} quicksand-text`}
             >
               {` Explore our media features below to learn more about our journey
               and the positive changes we are driving in the world of STEM

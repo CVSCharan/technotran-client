@@ -129,8 +129,8 @@ const ContactUsPage = () => {
                 variants={itemVariants}
                 className={`${styles.introText} quicksand-text`}
               >
-                We're here to assist you and answer any questions you may have.
-                Feel free to reach out to us through any of the contact methods
+                {`We're here to assist you and answer any questions you may have.
+                Feel free to reach out to us through any of the contact methods`}
                 below.
               </motion.p>
             </motion.div>

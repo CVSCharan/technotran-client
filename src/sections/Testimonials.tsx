@@ -2,7 +2,7 @@
 
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Carousel } from "antd";
 import styles from "../styles/Testimonials.module.css";
@@ -10,30 +10,11 @@ import { testimonialsCarouselData } from "@/utils/helpers";
 import Image from "next/image";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 
 const Testimonials = () => {
   const carouselRef = useRef<any>(null);
   const [expandedIds, setExpandedIds] = useState<Record<number, boolean>>({});
-  const [isMobile, setIsMobile] = useState(false);
-
-  // Check for mobile viewport on client side
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    
-    if (typeof window !== 'undefined') {
-      handleResize();
-      window.addEventListener('resize', handleResize);
-    }
-    
-    return () => {
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('resize', handleResize);
-      }
-    };
-  }, []);
 
   const sectionVariants = {
     hidden: { opacity: 0 },
@@ -125,11 +106,11 @@ const Testimonials = () => {
           >
             Client Testimonials
           </motion.h2>
-          <motion.div 
+          <motion.div
             variants={headingVariants}
             className={styles.titleUnderline}
           ></motion.div>
-          <motion.p 
+          <motion.p
             variants={headingVariants}
             className={`${styles.subtitle} quicksand-text`}
           >
@@ -156,7 +137,7 @@ const Testimonials = () => {
                       <div className={styles.quoteIconTop}>
                         <FormatQuoteIcon className={styles.quoteIconSvg} />
                       </div>
-                      
+
                       <div className={styles.descriptionContainer}>
                         <p className={`${styles.description} quicksand-text`}>
                           {isExpanded ? item.desc : shortDesc}
@@ -170,7 +151,7 @@ const Testimonials = () => {
                           </button>
                         )}
                       </div>
-                      
+
                       {!isExpanded && (
                         <div className={styles.authorInfo}>
                           <div className={styles.cardImage}>
@@ -197,7 +178,7 @@ const Testimonials = () => {
                           </div>
                         </div>
                       )}
-                      
+
                       <div className={styles.quoteIconBottom}>
                         <FormatQuoteIcon className={styles.quoteIconSvg} />
                       </div>
@@ -210,15 +191,15 @@ const Testimonials = () => {
         </motion.div>
 
         <div className={styles.customControls}>
-          <button 
-            className={styles.prevButton} 
+          <button
+            className={styles.prevButton}
             onClick={goToPrev}
             aria-label="Previous testimonial"
           >
             <ArrowBackIosNewIcon />
           </button>
-          <button 
-            className={styles.nextButton} 
+          <button
+            className={styles.nextButton}
             onClick={goToNext}
             aria-label="Next testimonial"
           >

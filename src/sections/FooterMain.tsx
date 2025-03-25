@@ -9,7 +9,6 @@ import {
   Instagram,
   LinkedIn,
   YouTube,
-  LocationOn,
 } from "@mui/icons-material";
 import FooterMainCarousel from "@/components/FotterMainCarousel";
 import Image from "next/image";
@@ -36,25 +35,29 @@ const FooterMain = () => {
   // Footer sections data
   const whoAreWeLinks = [
     { name: "About Us", link: "/about-us" },
-    { name: "Contact Us", link: "/contact-us" },
-    { name: "Help & Support", link: "/help-support" },
-    { name: "Terms And Conditions", link: "/terms&conditions" },
+    { name: "MOU", link: "/mou" },
+    { name: "Media & Awards", link: "/media&awards" },
     { name: "Privacy Policy", link: "/privacy-policy" },
+    { name: "Terms And Conditions", link: "/terms&conditions" },
   ];
 
   const whatWeOfferLinks = [
-    { name: "Training Solutions", link: "/training-solutions" },
-    { name: "Industrial Solutions", link: "/industrial-solutions" },
-    { name: "Lab Solutions", link: "/lab-solutions" },
+    { name: "R & D Projects", link: "/r&d-projects" },
+    { name: "AR/VR Lab", link: "/ar-vr-lab" },
+    { name: "School Robotics Lab", link: "/school-robotics-lab" },
+    { name: "ATAL Tinkering Lab", link: "/atal-tinkering-lab" },
+    { name: "IOT Lab", link: "/iot-lab" },
+    { name: "Robotics & ES Lab", link: "/robotics-es-lab" },
+    { name: "AR/VR Lab", link: "/ar-vr-lab" },
+    { name: "Industrial Lab Solutions", link: "/industrial-lab-solutions" },
   ];
 
   const quickLinks = [
     { name: "Home", link: "/" },
     { name: "Workshops", link: "/workshops" },
-    { name: "MOU", link: "/mou" },
-    { name: "Media & Awards", link: "/media&awards" },
     { name: "Events", link: "/events" },
-    { name: "Careers", link: "/careers" },
+    { name: "Center Of Excellence", link: "/center-of-excellence" },
+    { name: "Job Oriented Courses", link: "/job-oriented-courses" },
     { name: "Contact Us", link: "/contact-us" },
   ];
 

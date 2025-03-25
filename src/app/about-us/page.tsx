@@ -63,7 +63,10 @@ const AboutUsPage = () => {
             className={styles.aboutUsLandingImg}
           />
         </section>
-        <section id="About Us Landing Section" className={styles.aboutUsSection}>
+        <section
+          id="About Us Landing Section"
+          className={styles.aboutUsSection}
+        >
           <motion.div
             className={styles.sectionHeader}
             initial="hidden"
@@ -71,14 +74,12 @@ const AboutUsPage = () => {
             variants={headingVariants}
             viewport={{ once: false, amount: 0.2 }}
           >
-            <h2 className={`${styles.subTitle} josefin-sans-text`}>
-              About Us
-            </h2>
+            <h2 className={`${styles.subTitle} josefin-sans-text`}>About Us</h2>
             <div className={styles.titleUnderline}></div>
           </motion.div>
-          
+
           <div className={styles.aboutUsContainer}>
-            <motion.div 
+            <motion.div
               className={styles.aboutUsContent}
               initial="hidden"
               whileInView="visible"
@@ -88,29 +89,30 @@ const AboutUsPage = () => {
               <p className={`${styles.aboutUsText} quicksand-text`}>
                 Technotran Solutions (ISO 9001:2015 Certified Company) is a
                 pioneering Educational Technology and Innovation Company
-                specializing in Embedded Systems, Robotics, 3D Printing, IoT, and
-                Artificial Intelligence. Serving schools, colleges, and
+                specializing in Embedded Systems, Robotics, 3D Printing, IoT,
+                and Artificial Intelligence. Serving schools, colleges, and
                 universities nationwide, we are dedicated to bridging the gap
                 between academics and industry through innovative solutions.
               </p>
-              
+
               <p className={`${styles.aboutUsText} quicksand-text`}>
                 Our services encompass hands-on training programs, internship
                 certifications, and industrial workshops, alongside custom DIY
                 robotic kit design, electronic product development, PCB design,
                 prototyping, and manufacturing.
               </p>
-              
+
               <p className={`${styles.aboutUsText} quicksand-text`}>
-                With a strong focus on R&D and societal impact, we collaborate with
-                institutions to create cutting-edge labs, support real-world projects,
-                and deliver sustainable technology solutions in agriculture, healthcare,
-                and education. At Technotran, we empower individuals and institutions
-                to thrive in the ever-evolving world of technology.
+                With a strong focus on R&D and societal impact, we collaborate
+                with institutions to create cutting-edge labs, support
+                real-world projects, and deliver sustainable technology
+                solutions in agriculture, healthcare, and education. At
+                Technotran, we empower individuals and institutions to thrive in
+                the ever-evolving world of technology.
               </p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className={styles.aboutUsImageWrapper}
               initial="hidden"
               whileInView="visible"
@@ -327,9 +329,9 @@ const AboutUsPage = () => {
                   Manufacturing Excellence
                 </h2>
                 <p className={`${styles.featureDesc} quicksand-text`}>
-                  At Technotran, we don't just distribute; we create. Our
+                  {`At Technotran, we don't just distribute; we create. Our
                   in-house manufacturing ensures that every product meets the
-                  highest standards of quality and performance.
+                  highest standards of quality and performance.`}
                 </p>
               </motion.div>
 
@@ -429,7 +431,7 @@ const AboutUsPage = () => {
             <div className={styles.innerContainer}>
               <div className={styles.imageWrapper}>
                 <Image
-                  src="https://github.com/CVSCharan/Technotran_Assets/blob/main/R.Vikas-Reddy-hero-img.jpg?raw=true"
+                  src="https://res.cloudinary.com/doxrqtfxo/image/upload/v1741560419/Technotran%20Assets/obmtlrbo3ddvqrcs8ohv.jpg"
                   alt="R. Vikas Reddy - Technotran Director"
                   height={400}
                   width={600}
@@ -512,9 +514,9 @@ const AboutUsPage = () => {
             </h2>
             <div className={styles.titleUnderline}></div>
           </motion.div>
-          
+
           <div className={styles.mouContainer}>
-            <motion.div 
+            <motion.div
               className={styles.mouCard}
               initial="hidden"
               whileInView="visible"
@@ -540,19 +542,23 @@ const AboutUsPage = () => {
                       className={styles.mouImage}
                     />
                   </div>
-                  <h3 className={`${styles.mouInstitutionName} josefin-sans-text`}>
+                  <h3
+                    className={`${styles.mouInstitutionName} josefin-sans-text`}
+                  >
                     {mouData[currentBannerOneImage]?.name}
                   </h3>
                 </motion.div>
               </AnimatePresence>
             </motion.div>
-            
+
             <div className={styles.mouIndicators}>
               {mouData.map((_, index) => (
                 <button
                   key={index}
                   className={`${styles.mouIndicator} ${
-                    index === currentBannerOneImage ? styles.mouIndicatorActive : ""
+                    index === currentBannerOneImage
+                      ? styles.mouIndicatorActive
+                      : ""
                   }`}
                   onClick={() => setCurrentBannerOneImage(index)}
                   aria-label={`View MOU with ${mouData[index]?.name}`}
