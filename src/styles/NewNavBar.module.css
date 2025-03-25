@@ -46,16 +46,20 @@
   align-items: center;
 }
 
+/* Fixing the alignment and underline issues */
 .navList {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
   gap: 3px;
+  align-items: center; /* This ensures all items are vertically centered */
 }
 
 .navItem {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .navLink {
@@ -69,6 +73,47 @@
   cursor: pointer;
   transition: color 0.3s ease;
   white-space: nowrap;
+  height: 100%; /* Ensure all links have the same height */
+}
+
+/* Remove the previous active underline styling */
+.active::after {
+  display: none;
+}
+
+/* Add new consistent active styling for all nav items */
+.navItem.active {
+  color: #8b0000;
+}
+
+.navItem.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 7px;
+  right: 7px;
+  height: 2px;
+  background-color: #8b0000;
+}
+
+.navLink.active {
+  color: #8b0000;
+}
+
+/* Remove the noSubmenu special styling that was causing issues */
+.navItem.noSubmenu {
+  border-bottom: none;
+}
+
+.navItem.noSubmenu .navLink.active {
+  border-bottom: none;
+  padding-bottom: 10px; /* Reset to match other items */
+  margin-bottom: 0; /* Reset margin */
+}
+
+/* Add this to ensure dropdown items don't have the underline */
+.dropdownLink.active::after {
+  display: none;
 }
 
 .navLink:hover {
@@ -234,4 +279,30 @@
   .dropdownLink {
     padding-left: 40px;
   }
+}
+
+/* Add these new styles */
+.navItem.noSubmenu {
+  border-bottom: none !important; /* Remove bottom border for non-dropdown items */
+}
+
+.navItem.noSubmenu .navLink.active {
+  border-bottom: 2px solid #4b0406; /* Apply border only to the active link */
+  /* Adjust padding to match your design */
+  padding-bottom: 5px;
+  margin-bottom: -5px; /* Compensate for the padding to maintain alignment */
+}
+
+/* Add this new class for active items without underline */
+.activeNoUnderline {
+  color: #8b0000; /* Keep the active color */
+}
+
+/* Remove all the underline styles from active elements */
+.active::after,
+.navItem.active::after,
+.navLink.active::after,
+.navItem.noSubmenu .navLink.active {
+  display: none;
+  border-bottom: none;
 }

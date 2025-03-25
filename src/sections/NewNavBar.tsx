@@ -8,18 +8,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styles from "../styles/NewNavBar.module.css";
+import { MenuItem } from "@/utils/types";
 
-interface SubmenuItem {
-  title: string;
-  link: string;
-  external?: boolean;
-}
 
-interface MenuItem {
-  title: string;
-  link?: string;
-  submenu?: SubmenuItem[];
-}
 
 const NewNavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -254,7 +245,7 @@ const NewNavBar = () => {
               <li
                 key={index}
                 className={`${styles.navItem} ${
-                  isMenuActive(item.title) ? styles.active : ""
+                  isMenuActive(item.title) ? styles.activeNoUnderline : ""
                 }`}
               >
                 {item.submenu ? (
@@ -267,7 +258,7 @@ const NewNavBar = () => {
                     <div
                       className={`${styles.navLink} ${styles.hasDropdown} ${
                         activeDropdown === item.title ? styles.dropdownOpen : ""
-                      }`}
+                      } ${isMenuActive(item.title) ? styles.activeNoUnderline : ""}`}
                       onClick={() => toggleDropdown(item.title)}
                     >
                       {item.title}
@@ -288,7 +279,7 @@ const NewNavBar = () => {
                           <li key={subIndex} className={styles.dropdownItem}>
                             <div
                               className={`${styles.dropdownLink} ${
-                                isActive(subItem.link) ? styles.active : ""
+                                isActive(subItem.link) ? styles.activeNoUnderline : ""
                               }`}
                               onClick={() =>
                                 handleNavigation(subItem.link, subItem.external)
@@ -304,7 +295,7 @@ const NewNavBar = () => {
                 ) : (
                   <div
                     className={`${styles.navLink} ${
-                      isActive(item.link || "") ? styles.active : ""
+                      isActive(item.link || "") ? styles.activeNoUnderline : ""
                     }`}
                     onClick={() => handleNavigation(item.link || "/")}
                   >

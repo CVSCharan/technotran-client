@@ -106,10 +106,6 @@ const Testimonials = () => {
           >
             Client Testimonials
           </motion.h2>
-          <motion.div
-            variants={headingVariants}
-            className={styles.titleUnderline}
-          ></motion.div>
           <motion.p
             variants={headingVariants}
             className={`${styles.subtitle} quicksand-text`}

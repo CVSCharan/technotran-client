@@ -12,6 +12,18 @@ export interface TrainingServicesItem {
   desc: string;
 }
 
+export interface SubmenuItem {
+  title: string;
+  link: string;
+  external?: boolean;
+}
+
+export interface MenuItem {
+  title: string;
+  link?: string;
+  submenu?: SubmenuItem[];
+}
+
 export interface IndustriesWeServeCarouselDataItem {
   id: number;
   imgSrc: string;
