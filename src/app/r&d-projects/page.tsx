@@ -56,66 +56,129 @@ const RnDProjectsPage = () => {
             </motion.h3>
           </div>
         </section>
-        <section id="R&D Content Section">
-          <div className={styles.sectionOne}>
-            <motion.h2
+        <section id="R&D Content Section" className={styles.projectsSection}>
+          <div className={styles.sectionContainer}>
+            <motion.div
+              className={styles.sectionHeader}
               initial="hidden"
               whileInView="visible"
               variants={headingVariants}
               viewport={{ once: false, amount: 0.2 }}
-              className={`${styles.subTitle} josefin-sans-text`}
-              style={{ marginBottom: "3rem" }}
             >
-              Explore Our Projects Videos
-            </motion.h2>
-            <iframe
-              src="https://www.youtube.com/embed/cVvQZR75u7k?autoplay=1&loop=1&mute=0controls=1&playlist=cVvQZR75u7k"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-              className={styles.videoPlayer}
-            />
-            <motion.h2
+              <h2 className={`${styles.subTitle} josefin-sans-text`}>
+                Explore Our Projects
+              </h2>
+            </motion.div>
+
+            <div className={styles.projectsGrid}>
+              <motion.div
+                className={styles.projectCard}
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ delay: 0.1 }}
+              >
+                <div className={styles.projectMedia}>
+                  <iframe
+                    src="https://www.youtube.com/embed/cVvQZR75u7k?autoplay=0&mute=1&loop=1&controls=1&playlist=cVvQZR75u7k"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                    className={styles.videoPlayer}
+                    title="Electronic Protection Locker System"
+                  />
+                </div>
+                <div className={styles.projectInfo}>
+                  <h3 className={`${styles.projectTitle} josefin-sans-text`}>
+                    Electronic Protection Locker System
+                  </h3>
+                  <p className={`${styles.projectDescription} quicksand-text`}>
+                    An advanced security solution featuring biometric
+                    authentication and remote monitoring capabilities for
+                    enhanced protection of valuable assets.
+                  </p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className={styles.projectCard}
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ delay: 0.2 }}
+              >
+                <div className={styles.projectMedia}>
+                  <video
+                    src="/videos/Soil-Investigation-Robot.mp4"
+                    muted
+                    controls
+                    className={styles.videoPlayer}
+                    poster="/images/soil-robot-thumbnail.jpg"
+                  />
+                </div>
+                <div className={styles.projectInfo}>
+                  <h3 className={`${styles.projectTitle} josefin-sans-text`}>
+                    Soil Investigation Robot
+                  </h3>
+                  <p className={`${styles.projectDescription} quicksand-text`}>
+                    An autonomous robot designed to analyze soil composition and
+                    properties in real-time, providing valuable data for
+                    agricultural and environmental applications.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Uncomment when ready to add this project
+              <motion.div 
+                className={styles.projectCard}
+                initial="hidden"
+                whileInView="visible"
+                variants={headingVariants}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ delay: 0.3 }}
+              >
+                <div className={styles.projectMedia}>
+                  <video
+                    src="/videos/Intelligent-Waste-Disposal-Robot.mp4"
+                    muted
+                    controls
+                    className={styles.videoPlayer}
+                    poster="/images/waste-robot-thumbnail.jpg"
+                  />
+                </div>
+                <div className={styles.projectInfo}>
+                  <h3 className={`${styles.projectTitle} josefin-sans-text`}>
+                    River Cleaning Robot
+                  </h3>
+                  <p className={`${styles.projectDescription} quicksand-text`}>
+                    An innovative solution for waterway maintenance, capable of autonomously collecting and sorting waste from rivers and lakes.
+                  </p>
+                </div>
+              </motion.div>
+              */}
+            </div>
+
+            <motion.div
+              className={styles.ctaContainer}
               initial="hidden"
               whileInView="visible"
               variants={headingVariants}
-              viewport={{ once: false, amount: 0.2 }}
-              style={{ marginBottom: "4rem" }}
-              className={`${styles.subTitle} josefin-sans-text`}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ delay: 0.4 }}
             >
-              Electronic Protection Locker system
-            </motion.h2>
-            {/* <video
-              src="/videos/Intelligent-Waste-Disposal-Robot.mp4"
-              muted
-              controls
-              className={styles.videoPlayer}
-            />
-            <motion.h2
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: false, amount: 0.2 }}
-              style={{ marginBottom: "4rem" }}
-              className={`${styles.subTitle} josefin-sans-text`}
-            >
-              River Cleaning Robot
-            </motion.h2> */}
-            <video
-              src="/videos/Soil-Investigation-Robot.mp4"
-              muted
-              controls
-              className={styles.videoPlayer}
-            />
-            <motion.h2
-              initial="hidden"
-              whileInView="visible"
-              variants={headingVariants}
-              viewport={{ once: false, amount: 0.2 }}
-              style={{ marginBottom: "4rem" }}
-              className={`${styles.subTitle} josefin-sans-text`}
-            >
-              Soil Investigation Robot
-            </motion.h2>
+              <h3 className={`${styles.ctaText} josefin-sans-text`}>
+                Interested in collaborating on a research project?
+              </h3>
+              <motion.a
+                href="/contact-us"
+                className={`${styles.ctaButton} quicksand-text`}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Contact Our R&D Team
+              </motion.a>
+            </motion.div>
           </div>
         </section>
       </div>

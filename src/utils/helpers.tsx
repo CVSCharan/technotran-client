@@ -363,7 +363,7 @@ export const mouData: MouDataItem[] = [
   },
   {
     id: 8,
-    name: "Sreenivasa Institute of Technology and Management Studies",
+    name: "SRM Valliammai College, Kanchipuram",
     imgSrc:
       "https://res.cloudinary.com/doxrqtfxo/image/upload/v1742860140/Technotran%20Assets/xtx9etmduqzk4wozg5x8.jpg",
   },

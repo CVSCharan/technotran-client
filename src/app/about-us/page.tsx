@@ -75,7 +75,6 @@ const AboutUsPage = () => {
             viewport={{ once: false, amount: 0.2 }}
           >
             <h2 className={`${styles.subTitle} josefin-sans-text`}>About Us</h2>
-            <div className={styles.titleUnderline}></div>
           </motion.div>
 
           <div className={styles.aboutUsContainer}>
@@ -145,7 +144,6 @@ const AboutUsPage = () => {
             <h2 className={`${styles.subTitle} josefin-sans-text`}>
               Our Purpose
             </h2>
-            <div className={styles.titleUnderline}></div>
           </motion.div>
 
           <div className={styles.mvContainer}>
@@ -223,7 +221,6 @@ const AboutUsPage = () => {
               <h2 className={`${styles.subTitle} josefin-sans-text`}>
                 Technotran Triumphs
               </h2>
-              <div className={styles.titleUnderline}></div>
             </motion.div>
             <div className={styles.triumphsContainer}>
               <div className={styles.triumphsContent}>
@@ -302,7 +299,6 @@ const AboutUsPage = () => {
               <h2 className={`${styles.subTitle} josefin-sans-text`}>
                 What Sets Us Apart
               </h2>
-              <div className={styles.titleUnderline}></div>
             </motion.div>
 
             <div className={styles.featuresGrid}>
@@ -512,7 +508,6 @@ const AboutUsPage = () => {
             <h2 className={`${styles.subTitle} josefin-sans-text`}>
               MOU With Various Institutions
             </h2>
-            <div className={styles.titleUnderline}></div>
           </motion.div>
 
           <div className={styles.mouContainer}>

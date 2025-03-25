@@ -52,7 +52,6 @@ const MediaAndAwards = () => {
               <h2 className={`${styles.sectionTitle} josefin-sans-text`}>
                 Awards & Recognition
               </h2>
-              <div className={styles.titleUnderline}></div>
             </motion.div>
 
             <motion.div
@@ -144,7 +143,6 @@ const MediaAndAwards = () => {
               <h2 className={`${styles.sectionTitle} josefin-sans-text`}>
                 Media Coverage
               </h2>
-              <div className={styles.titleUnderline}></div>
             </motion.div>
 
             <div className={styles.mediaContentContainer}>
@@ -209,7 +207,6 @@ const MediaAndAwards = () => {
               <h2 className={`${styles.sectionTitle} josefin-sans-text`}>
                 Social Media Highlights
               </h2>
-              <div className={styles.titleUnderline}></div>
             </motion.div>
             <motion.h3
               initial="hidden"
@@ -291,7 +288,6 @@ const MediaAndAwards = () => {
               <h2 className={`${styles.sectionTitle} josefin-sans-text`}>
                 Inauguration Of Technotran Electronics Solutions
               </h2>
-              <div className={styles.titleUnderline}></div>
             </motion.div>
 
             <motion.div
