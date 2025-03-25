@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import SendIcon from "@mui/icons-material/Send";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import EmailIcon from "@mui/icons-material/Email";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import emailjs from "emailjs-com";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
@@ -316,7 +315,7 @@ const EnquiryForm = () => {
             viewport={{ once: true }}
           >
             <h2 className={`${styles.contactTitle} josefin-sans-text`}>
-              Let's Talk
+              {`Let's Talk`}
             </h2>
             <div className={styles.titleUnderline}></div>
           </motion.div>
